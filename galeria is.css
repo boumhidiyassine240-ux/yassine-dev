@@ -1,0 +1,379 @@
+   /*TITULO PRINCIPAL + SUBTITULO + GALERIA COMPLETA  100% COM LEGENDAS POR BAIXO.*/
+
+   .main-container-is {
+       display: grid;
+       justify-content: center;
+       height: 50vh;
+       gap: 20px;
+       align-items: center;
+       margin-right: 5%;
+   }
+
+
+   .titulo-paragrafo-is {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       height: 125vh;
+   }
+
+
+
+
+   .titulio-principal-is {
+       color: white;
+       animation: lights 7s 950ms linear infinite, fadeIn linear 6.5s;
+       font-size: 40px;
+       font-family: 'yassine2';
+       margin-left: 10px;
+
+
+   }
+
+
+   .paragrafo-principal-is {
+       color: white;
+       font-size: 20px;
+       font-family: 'yassine';
+       animation: fadeIn linear 6.5s;
+       margin: 0;
+   }
+
+
+   .galeria-is {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 60px;
+       margin-left: 73px;
+   }
+
+
+   .galeria-is-1 {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 60px;
+       margin-left: 76px;
+   }
+
+
+   .galeria-is-2 {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 60px;
+       margin-left: 76px;
+   }
+
+
+   .projetos-is {
+       width: 315px;
+       height: 184px;
+       border-radius: 10.5px;
+
+   }
+
+
+
+   .descriçao-principal-is {
+       display: flex;
+       justify-content: center;
+   }
+
+
+   .descriçao-secundaria-is {
+       font-family: yassine2;
+       letter-spacing: -0.8px;
+       font-size: 1.1em;
+       color: white;
+       animation: fadeIn linear 6.5s;
+   }
+
+
+   .galeria-is-titulo {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: 70px;
+   }
+
+
+   .titulo-galeria-principal {
+       color: white;
+       font-size: 30px;
+       letter-spacing: 3px;
+       animation: fadeIn linear 6.5s;
+       margin-right: 85px;
+   }
+
+   .titulo-galeria-principal:hover {
+       text-decoration: underline;
+       transition: text-decoration 0.3s ease-in-out;
+
+
+   }
+
+
+   /*POP-UP PARA GALERIA IS!*/
+
+   .modal-oculto {
+       display: none;
+       width: 100%;
+       height: 100%;
+
+   }
+
+
+   .modal-conteudo {
+       display: flex;
+       flex-direction: column-reverse;
+       margin: 0 auto;
+       position: relative;
+       bottom: 545px;
+       filter: drop-shadow(2px 4px 6px skyblue);
+   }
+
+
+   #imagen-modal {
+       width: 1024px;
+       height: 500px;
+   }
+
+
+   #fechar-btn {
+       display: flex;
+       flex-direction: column;
+
+       background: none;
+       border: none;
+       color: red;
+       font-size: 50px;
+       position: fixed;
+       top: -36px;
+       right: -40px;
+   }
+
+   #legenda-modal {
+       font-size: 30px;
+       margin: 7px auto;
+       flex-direction: column;
+       font-family: 'yassine2';
+       color: antiquewhite;
+   }
+
+
+   /* BUTTOES PARA PROXIMO E O ANTERIOR CONTEUDO */
+   .container-butao {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 100px;
+       margin: 70px;
+       padding: 2%;
+
+   }
+
+
+
+   .anterior,
+   .proximo {
+       padding: 10px 20px;
+       cursor: pointer;
+       background: skyblue;
+       color: black;
+       border: none;
+       border-radius: 10px;
+       animation: glow 1.4s infinite alternate;
+       font-family: yassine2;
+       text-decoration: none;
+   }
+
+   a {
+       text-decoration: none;
+   }
+
+
+
+
+   /* MEDIA PARA A GALERIA IS 100% */
+
+   @media screen and (max-width:1409px) {
+
+       .main-container-is {
+           display: grid;
+           justify-content: center;
+           height: 65vh;
+           align-items: center;
+           gap: 60px;
+       }
+
+
+
+       .titulio-principal-is {
+           font-size: 2.0rem;
+           text-align: center;
+       }
+
+
+       img.projetos-is {
+           width: 300px;
+           border-radius: 10.5px;
+           border: 1px solid black;
+       }
+
+
+
+       .paragrafo-principal-is {
+           letter-spacing: 2px;
+           font-size: 1.0rem;
+       }
+
+
+
+       .galeria-is {
+           display: grid;
+           grid-template-columns: repeat(2, minmax(250px, 1fr));
+           transition: display 0.3s ease-in-out;
+       }
+
+
+
+       .galeria-is-1 {
+           display: grid;
+           grid-template-columns: repeat(2, minmax(250px, 1fr));
+           transition: display 0.3s ease-in-out;
+       }
+
+
+       .modal-conteudo {
+           bottom: 282px;
+       }
+
+
+
+       #imagen-modal {
+           max-width: 1024px;
+           width: 550px;
+           height: 350px;
+       }
+   }
+
+
+
+   @media screen and (max-width:691px) {
+
+       .main-container-is {
+           display: grid;
+           justify-content: center;
+           height: 70vh;
+           align-items: center;
+           gap: 60px;
+           display: grid;
+           margin-right: 22%;
+       }
+
+
+
+       .intro-loader {
+           left: 3%;
+       }
+
+
+
+       .titulo-galeria-principal {
+           font-size: 1.6rem;
+       }
+
+
+       .descriçao-secundaria-is {
+           font-family: yassine2;
+           letter-spacing: -0.8px;
+           font-size: 0.9rem;
+           color: white;
+           animation: fadeIn linear 6.5s;
+           margin-left: 15%;
+       }
+
+
+       .titulo-galeria {
+           color: white;
+           font-size: 3.0rem;
+           letter-spacing: 5px;
+           opacity: 0;
+           transform: translateY(40px);
+           transition: 1s;
+           margin-right: 40px;
+       }
+
+
+       img.projetos-is {
+           width: 300px;
+           border-radius: 10.5px;
+           border: 1px solid black;
+       }
+
+
+       .titulo-principal-is {
+           font-size: 2.0rem;
+           text-align: center;
+       }
+
+
+       .paragrafo-principal-is {
+           letter-spacing: 1px;
+           font-size: 0.7rem;
+       }
+
+
+       .galeria-is-1 {
+           display: grid;
+           grid-template-columns: repeat(1, minmax(250px, 0fr));
+           transition: display 0.3s ease-in-out;
+       }
+
+
+       .galeria-is-2 {
+           display: grid;
+           grid-template-columns: repeat(1, minmax(250px, 0fr));
+           transition: display 0.3s ease-in-out;
+       }
+
+
+       .descriçao-principal {
+           display: flex;
+           justify-content: center;
+           margin-left: 15%;
+       }
+
+
+       .descriçao-secundaria {
+           font-family: yassine;
+           font-size: 1rem;
+           color: white;
+       }
+
+
+       #imagen-modal {
+           max-width: 1024px;
+           width: 422px;
+           height: 326px;
+       }
+
+
+       #fechar-btn {
+           font-size: 2rem;
+           margin-right: 10%;
+       }
+
+
+       #legenda-modal {
+           font-size: 1.3rem;
+           margin: 7px auto;
+           font-family: 'yassine2';
+           color: antiquewhite;
+       }
+
+
+   }

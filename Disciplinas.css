@@ -1,0 +1,258 @@
+ 
+ /*CM*/
+ .Main-card {
+     display: flex;
+     flex-direction: row;
+     text-align: center;
+     justify-content: center;
+     gap: 60px;
+     position: absolute;
+     top: 40%;
+     width: 99%;
+     transition: flex-direction 0.3s ease-in-out;
+
+ }
+
+ .Main-card:hover>.card-cm:not(:hover) {
+     filter: blur(20px);
+ }
+
+ .card-cm {
+     width: 360px;
+     background: linear-gradient(135deg, #4b79a1, #283e51);
+     color: white;
+     border-radius: 15px;
+     padding: 20px;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 3);
+     text-align: center;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     padding: 18px;
+     animation: fadeIn linear 7.2s;
+ }
+
+ .card-cm:hover {
+     transform: scale(1.1, 1.1);
+     box-shadow: 0px 0px 20px 10px #00bfffbf;
+     transition: transform 0.3s ease-in-out;
+ }
+
+
+ .cm {
+     width: 70%;
+     max-width: 70%;
+     border-radius: 20px 10px;
+     border: double lightskyblue;
+     margin-bottom: 2px;
+     margin-top: 6px;
+
+ }
+
+ .name {
+     color: white;
+     font-size: 21px;
+     font-family: 'yassine2';
+     margin-top: -3px;
+     margin-bottom: 4px;
+     margin: 7px;
+
+ }
+
+ .paragrafo1 {
+     font-size: 16px;
+     font-family: 'yassine';
+     margin-top: 5px;
+     margin-bottom: 8px
+ }
+
+
+
+
+
+ /*SPW*/
+
+ .Main-card:hover>.card-spw:not(:hover) {
+     filter: blur(20px);
+ }
+
+ .card-spw {
+     width: 360px;
+     background: linear-gradient(135deg, #4b79a1, #283e51);
+     color: white;
+     border-radius: 15px;
+     padding: 20px;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 3);
+     text-align: center;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     padding: 18px;
+     animation: fadeIn linear 6.5s;
+     opacity: 0.8;
+ }
+
+ .card-spw:hover {
+     transform: scale(1.1, 1.1);
+     box-shadow: 0px 0px 20px 10px #00bfffbf;
+     transition: transform 0.3s ease-in-out;
+ }
+
+
+ .SPW {
+     width: 65%;
+     max-width: 70%;
+     border-radius: 20px 10px;
+     border: double lightskyblue;
+     margin-bottom: 2px;
+     margin-top: 6px;
+
+ }
+
+
+ .name1 {
+     color: white;
+     font-size: 21px;
+     font-family: 'yassine2';
+     margin-top: -3px;
+     margin-bottom: 4px;
+
+
+ }
+
+ .paragrafo1 {
+     font-size: 16px;
+     font-family: 'yassine';
+     margin-top: 5px;
+     margin-bottom: 8px
+ }
+
+ .SPW1 {
+     color: whitesmoke;
+     font-family: 'yassine2';
+     background: linear-gradient(342deg, black, red, transparent);
+     border-radius: 18px;
+     margin-top: 7px;
+     font-size: 15px;
+     border: none;
+     box-shadow: 0 0 6px antiquewhite;
+ }
+
+
+
+
+ /*IS*/
+
+
+ .Main-card:hover>.card-is:not(:hover) {
+     filter: blur(20px);
+ }
+
+
+ .card-is {
+     width: 360px;
+     background: linear-gradient(135deg, #4b79a1, #283e51);
+     color: white;
+     border-radius: 15px;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 3);
+     text-align: center;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     padding: 18px;
+     animation: fadeIn linear 6.5s;
+     opacity: 0.8;
+ }
+
+ .card-is:hover {
+     transform: scale(1.1, 1.1);
+     box-shadow: 0px 0px 20px 10px #00bfffbf;
+     transition: transform 0.3s ease-in-out;
+
+
+ }
+
+
+ .name3 {
+     color: white;
+     font-size: 21px;
+     font-family: 'yassine2';
+     margin-top: -3px;
+     margin-bottom: 4px;
+     margin: 7px;
+
+ }
+
+ .paragrafo3 {
+     font-size: 16px;
+     font-family: 'yassine';
+     margin-top: 5px;
+     margin-bottom: 8px
+ }
+
+ .IS {
+     width: 70%;
+     max-width: 70%;
+     border-radius: 20px 10px;
+     border: double lightskyblue;
+     margin-bottom: 2px;
+     margin-top: 6px;
+
+ }
+
+ /*Media queries para os cards dos projetos!!*/
+
+ @media screen and (max-width:915px) {
+     .Main-card {
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+         transition: flex-direction 0.3s ease-in-out;
+     }
+
+     .card-cm,
+     .card-spw,
+     .card-is {
+         width: 55%;
+     }
+
+     .yassine-house {
+         font-size: 2.0rem;
+     }
+
+     .logo-pvp {
+         margin: 1% auto;
+         max-width: 10%;
+         margin-left: 3.5rem;
+         transition: margin 0.3s ease-in-out;
+
+
+     }
+
+ }
+
+ @media screen and (max-width:320px) {
+     .Main-card {
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+         transition: flex-direction 0.3s ease-in-out;
+     }
+
+     .card-cm,
+     .card-spw,
+     .card-is {
+         width: 55%;
+     }
+
+     .yassine-house,
+     .name,
+     .name1,
+     .name3 {
+         font-size: 1rem;
+     }
+
+     .logo-pvp {
+         margin: 0 auto;
+         max-width: 22%;
+         margin-left: -0.5rem;
+         margin-top: 4%;
+         transition: margin 0.3s ease-in-out;
+     }
+ }

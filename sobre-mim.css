@@ -1,0 +1,549 @@
+* {
+    box-sizing: content-box;
+}
+
+/*IMAGENS SOBRE MIM*/
+
+.main-img-yassine {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 23%;
+}
+
+
+.yassine_img {
+    animation: fadeIn 4.5s, glow 1.4s infinite alternate;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    max-width: 1024px;
+    width: 30%;
+
+}
+
+
+.yassine_img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+
+
+
+/*TITULO SOBRE MIM*/
+.main-sobremim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.sobre-mim-3 {
+    font: 700 3em/1 "oswald", sans-serif;
+    color: rgba(224, 255, 253, 0.593);
+    font-family: 'yassine2';
+    font-size: 90px;
+    animation: lights 7s 950ms linear infinite, fadeIn linear 6.5s;
+
+}
+
+
+
+
+
+
+
+
+
+/*CARDS SOBRE MIM COMPLETOS!!*/
+
+.container-pai {
+    display: grid;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.main-primario,
+.main-secundario {
+    display: flex;
+    gap: 60px;
+    z-index: 2;
+
+}
+
+
+
+.sobre-yassine-primario,
+.sobre-yassine-secundario {
+    width: 70%;
+    background: linear-gradient(135deg, #4b79a1, #283e51);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 3);
+    text-align: center;
+    animation: fadeIn linear 0.9s;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+
+.sobre-mim-titulo {
+    margin-top: 42px;
+    margin-left: 3px;
+    text-align: center;
+    font-family: yassine2;
+}
+
+.sobre-mim-titulo:hover {
+    text-decoration: underline;
+    transition: text-decoration 1.0s ease-in-out;
+}
+
+
+
+.sobre-mim-paragrafo {
+    font-family: yassine3;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+.sobre-mim-primario:hover .sobre-mim-secundario:hover {
+    transform: scale(0.9, 0.9);
+}
+
+
+
+/*FOOTER PARA AS REDES SOCIAS*/
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 50px;
+}
+
+.h1-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.titulo-redes-sociais {
+    font: 700 3em/1 "oswald", sans-serif;
+    color: rgba(224, 255, 253, 0.593);
+    display: flex;
+    justify-content: center;
+    font-family: 'yassine2';
+    font-size: 70px;
+    animation: fadeIn 4.5s, glow 1.4s infinite alternate;
+
+}
+
+
+
+.principal-redes-sociais {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-right: 70px;
+
+
+}
+
+.principal-redes-sociais li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 1024px;
+    width: 100px;
+    height: 80px;
+
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.495);
+    border-radius: 60px;
+    transition: .2s ease-in-out;
+
+    margin: 10px;
+    position: relative;
+}
+
+.principal-redes-sociais li:hover {
+    width: 180px;
+}
+
+.principal-redes-sociais li .icon-redes-sociais {
+    color: rgba(128, 128, 128, 0.956);
+    font-size: 3.1em;
+    transition: .2s;
+    opacity: 0.6;
+}
+
+.principal-redes-sociais li span {
+    position: absolute;
+}
+
+.principal-redes-sociais li .texto-redes-sociais {
+    color: black;
+    font-family: yassine2;
+    letter-spacing: 1.5px;
+    font-size: 21px;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+    animation: fadeIn 4.5s, glow 1.4s infinite alternate;
+
+}
+
+.principal-redes-sociais li:hover .texto-redes-sociais {
+    transform: scale(1);
+}
+
+
+.principal-redes-sociais li:hover .icon-redes-sociais {
+    transform: scale(0);
+}
+
+.principal-redes-sociais li::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+}
+
+.principal-redes-sociais li:hover::before {
+    opacity: 1;
+    border-radius: 60px;
+}
+
+
+/* BUTTOES PARA PROXIMO E O ANTERIOR CONTEUDO */
+
+.container-butao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    position: relative;
+    bottom: 150px;
+}
+
+
+
+.anterior,
+.proximo {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: skyblue;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    animation: glow 1.4s infinite alternate;
+    font-family: yassine2;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+/* MEDIA PARA O SOBRE MIM 100% */
+
+
+@media screen and (max-width:849px) {
+
+    .container-principal {}
+
+    .main-sobremim {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .sobre-mim-3 {
+        font-size: 4rem;
+        transition: font-size 0.3s ease-in-out;
+    }
+
+
+
+
+
+    .main-img-yassine {
+        display: flex;
+        justify-content: center;
+        margin-right: 8%;
+        gap: 0%;
+
+
+    }
+
+    .yassine_img {
+        width: 269px;
+        transition: width 0.3s ease-in-out;
+    }
+
+
+    .sobre-mim-titulo {
+        font-size: 1.4rem;
+    }
+
+
+    .sobre-yassine-secundario,
+    .sobre-yassine-primario {
+        max-width: 80%;
+        width: 65%;
+        transition: width 0.3s ease-in-out;
+    }
+
+
+    .main-primario,
+    .main-secundario {
+        display: flex;
+        gap: 60px;
+        z-index: 2;
+        flex-direction: column;
+        transition: flex-direction 0.3s ease-in-out;
+    }
+
+
+
+    .sobre-mim-paragrafo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        transition: font-size 0.3s ease-in-out;
+
+    }
+
+
+
+
+    .principal-redes-sociais {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.2rem;
+        margin-right: 60px;
+
+    }
+
+    .titulo-redes-sociais {
+        font-size: 3.0rem;
+        margin-left: 26px;
+        transition: font-size 0.3s ease-in-out;
+    }
+
+    .principal-redes-sociais li .icon-redes-sociais {
+        font-size: 2.1em;
+        transition: font-size 0.3s ease-in-out;
+
+    }
+
+
+    .principal-redes-sociais li {
+
+        max-width: 1024px;
+        width: 80px;
+        height: 60px;
+    }
+
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width:646px) {
+
+
+    .sobre-mim-3 {
+        font-size: 2.4rem;
+        transition: font-size 0.3s ease-in-out;
+    }
+
+
+
+    .yassine_img {
+        width: 44%;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .sobre-mim-titulo {
+        font-size: 1.4rem;
+    }
+
+
+    .sobre-yassine-secundario,
+    .sobre-yassine-primario {
+        max-width: 80%;
+        width: 65%;
+        transition: width 0.3s ease-in-out;
+    }
+
+
+    .main-primario,
+    .main-secundario {
+        display: flex;
+        gap: 60px;
+        z-index: 2;
+        flex-direction: column;
+        transition: flex-direction 0.3s ease-in-out;
+    }
+
+
+
+    .sobre-mim-paragrafo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.2rem;
+        transition: font-size 0.3s ease-in-out;
+
+    }
+
+
+
+
+    .principal-redes-sociais {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.2rem;
+        margin-right: 60px;
+    }
+
+    .titulo-redes-sociais {
+        font-size: 2.0rem;
+        margin-left: 26px;
+        transition: font-size 0.3s ease-in-out;
+    }
+
+    .principal-redes-sociais li .icon-redes-sociais {
+        font-size: 1.8em;
+        transition: font-size 0.3s ease-in-out;
+
+    }
+
+
+    .principal-redes-sociais li {
+
+        max-width: 1024px;
+        width: 60px;
+        height: 50px;
+    }
+
+}
+
+
+
+@media screen and (max-width:470px) {
+
+
+    .sobre-mim-3 {
+        font-size: 2.1rem;
+        transition: font-size 0.3s ease-in-out;
+    }
+
+
+
+    .yassine_img {
+        width: 44%;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .sobre-mim-titulo {
+        font-size: 1.4rem;
+    }
+
+
+    .sobre-yassine-secundario,
+    .sobre-yassine-primario {
+        max-width: 80%;
+        width: 65%;
+        transition: width 0.3s ease-in-out;
+    }
+
+
+    .main-primario,
+    .main-secundario {
+        display: flex;
+        gap: 60px;
+        z-index: 2;
+        flex-direction: column;
+        transition: flex-direction 0.3s ease-in-out;
+    }
+
+
+
+    .sobre-mim-paragrafo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.2rem;
+        transition: font-size 0.3s ease-in-out;
+
+    }
+
+
+
+
+    .principal-redes-sociais {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+        transition: flex-direction 0.3s ease-in-out, margin 0.3s ease-in-out;
+        margin-right: 60px;
+
+    }
+
+
+    .titulo-redes-sociais {
+        font-size: 1.3rem;
+        margin-left: 26px;
+        transition: font-size 0.3s ease-in-out;
+    }
+
+    .principal-redes-sociais li .icon-redes-sociais {
+        font-size: 1.8em;
+        transition: font-size 0.3s ease-in-out;
+
+    }
+
+
+    .principal-redes-sociais li {
+        max-width: 1024px;
+        width: 60px;
+        height: 50px;
+
+    }
+
+
+    .titulo-galeria {
+        font-size: 2.1rem;
+
+
+    }
+}

@@ -1,0 +1,322 @@
+.swipers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px; 
+    margin-bottom: 70px; 
+}
+
+.mySwiper3 {
+    max-width: 1024px;
+    width: 60%;
+    overflow: visible;
+    margin:60px 0; 
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 450px;
+    object-fit: fill;
+}
+
+/* Títulos do Swiper */
+.swiper-titulo-is,
+.swiper-titulo-is-1,
+.swiper-titulo-is-2 {
+    color: aliceblue;
+    font-family: 'yassine2', sans-serif;
+    font-size: 1.8rem;
+    text-decoration: none;
+    text-align: center;
+    transition: font-size 0.3s ease-in-out;
+    margin: 0 auto 15px auto; /* Centrado automático sem margins em rem gigantes */
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ /*BUTÕES CSS  PERSONALIZADOS DO CAROUSEL*/
+ .swiper-button-next,
+ .swiper-rtl .swiper-button-prev {
+     right: -4rem;
+     color: aqua;
+ }
+
+ .swiper-button-prev,
+ .swiper-rtl .swiper-button-next {
+     left: -4rem;
+     color: aquamarine;
+ }
+
+ .swiper-horizontal.swiper-pagination-bullets,
+ .swiper-pagination-bullets.swiper-pagination-horizontal,
+ .swiper-pagination-custom,
+ .swiper-pagination-fraction {
+     bottom: 1.1rem;
+     width: 100%;
+ }
+
+
+
+
+ .Anunciado {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: 108vh;
+     position: relative;
+
+ }
+
+
+ .titulo-anunciado {
+     display: flex;
+     justify-content: center;
+
+     font: 700 3em/1 "oswald", sans-serif;
+     color: rgba(224, 255, 253, 0.593);
+     font-family: 'yassine2';
+     animation: lights 7s 950ms linear infinite, fadeIn linear 6.5s;
+     position: absolute;
+     top: 40%;
+     font-size: 4.0rem;
+
+ }
+
+
+ .paragrafo-anunciado {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+     font-family: 'yassine';
+     font-size: 1.0rem;
+     color: white;
+     text-decoration-color: #00bfffbf;
+     animation: fadeIn linear 6.5s;
+     position: absolute;
+     top: 54%;
+
+ }
+
+
+ /* BUTTOES PARA PROXIMO E O ANTERIOR CONTEUDO */
+ .container-butao {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 100px;
+     margin: 50px;
+
+ }
+
+
+
+ .anterior,
+ .proximo {
+     padding: 10px 20px;
+     cursor: pointer;
+     background: skyblue;
+     color: black;
+     border: none;
+     border-radius: 10px;
+     animation: glow 1.4s infinite alternate;
+     font-family: yassine2;
+     text-decoration: none;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+
+
+
+ MEDIA PARA O CARROSEL-IS!!
+ @media screen and (max-width:900px) {
+
+     :root {
+         --swiper-theme-color: blue;
+         --swiper-navigation-size: 2.5rem;
+     }
+
+     .container {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         position: static;
+     }
+
+     .mySwiper3 {
+         width: 500px;
+         transition: max-widht 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+
+     }
+
+     .swiper-slide img {
+         width: 100%;
+         object-fit: fill;
+     }
+
+
+     .swiper-button-next,
+     .swiper-rtl .swiper-button-prev {
+         transition: right 0.3s ease-in-out;
+         right: 0%;
+         top: 13.5rem;
+
+     }
+
+     .swiper-button-prev,
+     .swiper-rtl .swiper-button-next {
+         left: 0%;
+         top: 13.5rem;
+         transition: left 0.3s ease-in-out;
+     }
+
+     .swiper-horizontal>.swiper-pagination-bullets,
+     .swiper-pagination-bullets.swiper-pagination-horizontal,
+     .swiper-pagination-custom,
+     .swiper-pagination-fraction {
+         display: none;
+
+     }
+
+
+     .titulo-anunciado {
+         font-size: 2.2rem;
+         transition: font-size 0.3s ease-in-out;
+     }
+
+     .paragrafo-anunciado {
+         font-size: 0.7rem;
+         margin: 0 auto;
+         margin-top: -1.6rem;
+         transition: font-size 0.3s ease-in-out;
+
+     }
+
+     .swiper-titulo-is {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         letter-spacing: 1px;
+         font-size: 2.0rem;
+         margin-right: 1.0rem;
+
+     }
+
+     #imagen-modal {
+         width: 60%;
+     }
+ }
+
+
+
+
+
+
+ @media screen and (max-width:549px) {
+     :root {
+         --swiper-theme-color: red;
+         --swiper-navigation-size: 2.5rem;
+     }
+
+     .container {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         gap: 60px;
+         position: static;
+     }
+
+     .mySwiper3 {
+         width: 325px;
+         transition: max-widht 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+
+     }
+
+     .titulo-anunciado {
+         font-size: 1.5em;
+         margin-top: 4.5rem;
+     }
+
+     .paragrafo-anunciado {
+         font-size: 0.5rem;
+         margin: 0 auto;
+         align-items: center;
+         transition: font-size 0.3s ease-in-out;
+     }
+
+     .swiper-titulo-is {
+         font-size: 1.1rem;
+     }
+ }
+
+
+
+
+
+
+
+
+ @media screen and (max-width:366px) {
+
+     :root {
+         --swiper-theme-color: skyblue;
+         border: 3px black;
+         --swiper-navigation-size: 1.5rem;
+     }
+
+
+     .container {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         gap: 60px;
+         position: static;
+     }
+
+     .mySwiper3 {
+         width: 80%;
+         transition: max-widht 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+
+     }
+
+
+     .titulo-anunciado {
+         font-size: 10%;
+         margin-top: 4rem;
+         transition: font-size 0.3s ease-in-out;
+     }
+
+     .paragrafo-anunciado {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         margin: 0 auto;
+         align-items: center;
+         transition: font-size 0.3s ease-in-out;
+         font-size: 0.3rem;
+     }
+
+     .swiper-titulo-is {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         transition: font-size 0.3s ease-in-out;
+
+
+     }
+ }

@@ -1,0 +1,455 @@
+ /*CSS PARA  MAIN DA GALERIA E OS TITULOS!!*/
+
+ .main-container-cm {
+     display: grid;
+     justify-content: center;
+     height: 70vh;
+     align-items: center;
+     gap: 60px
+ }
+
+ .titulos-principais-cm {
+     height: 82vh;
+     margin-top: 25%;
+ }
+
+ .titulo-principal-cm {
+     display: flex;
+     justify-content: center;
+     margin-top: 350px;
+     font-family: yassine2;
+     letter-spacing: -0.8px;
+     font-size: 1.1em;
+     color: rgba(224, 255, 253, 0.593);
+     animation: lights 7s 950ms linear infinite, fadeIn linear 6.5s;
+     font-size: 80px;
+
+ }
+
+ .paragrafo-principal-cm {
+     display: flex;
+     justify-content: center;
+     color: white;
+     font-size: 20px;
+     letter-spacing: 6px;
+     font-family: 'yassine';
+     animation: fadeIn linear 6.5s;
+ }
+
+ .logo-pvp {
+     max-width: 100px;
+     animation: fadeIn linear 2.1s;
+     z-index: 1;
+     display: flex;
+ }
+
+
+
+
+
+ /*CSS PARA A GALERIA COMPLETA 100% */
+
+ .galeria-cm {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 60px;
+ }
+
+ .galeria-cm-1 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 60px;
+ }
+
+ .galeria-cm-2 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 60px;
+ }
+
+ img.projetos-cm {
+     width: 300px;
+     border-radius: 10.5px;
+     border: 1px solid black;
+ }
+
+
+ .descriçao-principal {
+     display: flex;
+     justify-content: center;
+ }
+
+ .descriçao-secundaria {
+     font-family: yassine2;
+     letter-spacing: -0.8px;
+     font-size: 1.1em;
+     color: white;
+ }
+
+
+ .galeria-cm-titulo {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 0px;
+     padding: 30px;
+ }
+
+
+ .titulo-galeria-principal {
+     color: white;
+     font-size: 35px;
+     letter-spacing: 3px;
+ }
+
+
+
+ /*POP-UP PARA GALERIA CM!*/
+
+ .abrir-popup {
+     background: none;
+     border: none;
+ }
+
+
+ .modal-oculto {
+     display: none;
+     width: 100%;
+     height: 100%;
+
+ }
+
+
+
+ .modal-conteudo {
+     display: flex;
+     flex-direction: column-reverse;
+
+     margin: 0 auto;
+     position: relative;
+     bottom: 30.5rem;
+     filter: drop-shadow(2px 4px 6px skyblue);
+ }
+
+ #video-modal {
+     max-width: 1024px;
+     width: 1024px;
+     height: 500px;
+ }
+
+ #fechar-btn {
+     display: flex;
+     flex-direction: column;
+
+     background: none;
+     border: none;
+     color: red;
+     font-size: 50px;
+     position: fixed;
+     top: -36px;
+     right: -40px;
+ }
+
+
+
+ #legenda-modal {
+     font-size: 30px;
+     margin: 7px auto;
+     flex-direction: column;
+     font-family: 'yassine2';
+     color: antiquewhite;
+ }
+
+ /* BUTTOES PARA PROXIMO E O ANTERIOR CONTEUDO */
+ .container-butao {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 100px;
+     margin: 50px;
+     padding: 1%;
+ }
+
+
+
+ .anterior,
+ .proximo {
+     padding: 10px 20px;
+     cursor: pointer;
+     background: skyblue;
+     color: black;
+     border: none;
+     border-radius: 10px;
+     animation: glow 1.4s infinite alternate;
+     font-family: yassine2;
+     text-decoration: none;
+
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+
+
+
+
+
+
+
+
+
+ /* MEDIA PARA A GALERIA 100% */
+
+ @media screen and (max-width:1409px) {
+     .main-container-cm {
+         display: grid;
+         justify-content: center;
+         height: 70vh;
+         align-items: center;
+         gap: 60px;
+     }
+
+     .titulos-principais-cm {
+         height: 72vh;
+     }
+
+
+     .titulo-principal-cm {
+         font-size: 3.0rem;
+         text-align: center;
+     }
+
+     img.projetos-cm {
+         width: 300px;
+         border-radius: 10.5px;
+         border: 1px solid black;
+     }
+
+
+
+     .paragrafo-principal-cm {
+         letter-spacing: 2px;
+         font-size: 1.0rem;
+     }
+
+     .galeria-cm {
+         display: grid;
+         grid-template-columns: repeat(2, minmax(250px, 1fr));
+         transition: display 0.3s ease-in-out;
+     }
+
+     .galeria-cm-1 {
+         display: grid;
+         grid-template-columns: repeat(2, minmax(250px, 1fr));
+         transition: display 0.3s ease-in-out;
+     }
+
+     .galeria-cm-2 {
+         display: grid;
+         grid-template-columns: repeat(2, minmax(250px, 1fr));
+         transition: display 0.3s ease-in-out;
+     }
+
+     #video-modal {
+         max-width: 1024px;
+         width: 550px;
+         height: 350px;
+     }
+
+ }
+
+
+
+
+
+ @media screen and (max-width:691px) {
+
+     .main-container-cm {
+         display: grid;
+         justify-content: center;
+         height: 70vh;
+         align-items: center;
+         gap: 60px;
+         margin-right: 10%;
+     }
+
+
+     .titulo-principal-cm {
+         font-size: 2.0rem;
+         text-align: center;
+     }
+
+     img.projetos-cm {
+         width: 300px;
+         border-radius: 10.5px;
+         border: 1px solid black;
+     }
+
+
+
+     .paragrafo-principal-cm {
+         letter-spacing: 1px;
+         font-size: 0.7rem;
+     }
+
+     .galeria-cm {
+         display: grid;
+         grid-template-columns: repeat(1, minmax(250px, 0fr));
+         transition: display 0.3s ease-in-out;
+     }
+
+     .galeria-cm-1 {
+         display: grid;
+         grid-template-columns: repeat(1, minmax(250px, 0fr));
+         transition: display 0.3s ease-in-out;
+     }
+
+     .galeria-cm-2 {
+         display: grid;
+         grid-template-columns: repeat(1, minmax(250px, 0fr));
+         transition: display 0.3s ease-in-out;
+     }
+
+     .descriçao-principal {
+         display: flex;
+         justify-content: center;
+         margin-left: 15%;
+     }
+
+     .descriçao-secundaria {
+         font-family: yassine;
+         font-size: 1rem;
+         color: white;
+     }
+
+     #video-modal {
+         max-width: 1024px;
+         width: 422px;
+         height: 326px;
+     }
+
+     #fechar-btn {
+         font-size: 2rem;
+         margin-right: 10%;
+     }
+
+     #legenda-modal {
+         font-size: 1.3rem;
+         margin: 7px auto;
+         font-family: 'yassine2';
+         color: antiquewhite;
+     }
+
+
+     .titulo-galeria {
+         font-size: 2.1rem;
+     }
+
+     .titulos-principais-cm {
+         height: 72vh;
+     }
+
+     .container-butao {
+         flex-direction: column;
+         position: relative;
+         left: 9%;
+         gap: 20px;
+         transition: left 0.3s ease-in-out;
+         margin: 0 auto;
+     }
+
+ }
+
+
+
+
+ @media screen and (max-width:412px) {
+     .main-container-cm {
+         display: grid;
+         justify-content: center;
+         height: 70vh;
+         align-items: center;
+         gap: 60px;
+     }
+
+
+     .titulo-principal-cm {
+         font-size: 2.0rem;
+         text-align: center;
+     }
+
+     img.projetos-cm {
+         width: 300px;
+         border-radius: 10.5px;
+         border: 1px solid black;
+     }
+
+
+
+     .paragrafo-principal-cm {
+         letter-spacing: 1px;
+         font-size: 0.7rem;
+     }
+
+     .galeria-cm {
+         display: grid;
+         grid-template-columns: repeat(1, minmax(250px, 0fr));
+         transition: grid-template-columns 0.3s ease-in-out;
+     }
+
+     .galeria-cm-1 {
+         display: grid;
+         grid-template-columns: repeat(1, minmax(250px, 0fr));
+         transition:grid-template-columns 0.3s ease-in-out;
+     }
+
+     .galeria-cm-2 {
+         display: grid;
+         grid-template-columns: repeat(1, minmax(250px, 0fr));
+         transition: grid-template-columns 0.3s ease-in-out;
+     }
+
+     .descriçao-principal {
+         display: flex;
+         justify-content: center;
+         margin-left: 15%;
+     }
+
+     .descriçao-secundaria {
+         font-family: yassine;
+         font-size: 1rem;
+         color: white;
+     }
+
+     #video-modal {
+         max-width: 1024px;
+         width: 80%;
+         height: 326px;
+     }
+
+     #fechar-btn {
+         font-size: 2rem;
+         margin-right: 10%;
+     }
+
+     #legenda-modal {
+         font-size: 1.3rem;
+         margin: 7px auto;
+         font-family: 'yassine2';
+         color: antiquewhite;
+     }
+
+
+     .titulo-galeira {
+         font-size: 2.1rem;
+     }
+
+     .titulos-principais-cm {
+         height: 72vh;
+     }
+
+ }

@@ -1,0 +1,114 @@
+/* CSS DA PAGINA PRINCIPAL IMAGEN E TEXTO!! */
+
+.fundo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+}
+
+.imagen-main {
+    max-width: 1024px;
+    width: 60%;
+
+    animation: glow 1s infinite alternate;
+    position: absolute;
+    bottom: 0px;
+    transition: top 0.3s ease-in-out;
+
+}
+
+
+
+.paragrafo-inicial {
+    max-width: 1024px;
+    width: 31%;
+    font-size: 1.7rem;
+    font-family: yassine2;
+    animation: lights 7s 770ms linear infinite, fadeIn linear 2.1s;
+    position: absolute;
+    top: 25%;
+    left: 6%;
+}
+
+
+/*MEDIA DA PAGINA PRINCIPAL*/
+
+@media screen and (max-width:809px) {
+
+    .imagen-main {
+        max-width: 1024px;
+        width: 60%;
+        animation: glow 1s infinite alternate;
+        position: absolute;
+        transition: top 0.3s ease-in-out;
+
+    }
+
+
+
+    .paragrafo-inicial {
+        max-width: 1024px;
+        width: 37%;
+        font-size: 1.4rem;
+        font-family: yassine2;
+        animation: lights 7s 770ms linear infinite, fadeIn linear 2.1s;
+        position: absolute;
+        top: 52%;
+        left: 14%;
+        transition: top 0.3s ease-in-out, left 0.3s ease-in-out;
+    }
+
+
+    .titulo-galeria {
+        font-size: 1.4rem;
+
+
+    }
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width:533px) {
+
+    .imagen-main {
+        max-width: 1024px;
+        width: 60%;
+        animation: glow 1s infinite alternate;
+        position: absolute;
+        transition: top 0.3s ease-in-out;
+
+    }
+
+
+
+    .paragrafo-inicial {
+        max-width: 1024px;
+        width: 37%;
+        font-size: 1.4rem;
+        font-family: yassine2;
+        animation: lights 7s 770ms linear infinite, fadeIn linear 2.1s;
+        position: absolute;
+        top: 52%;
+        left: 14%;
+        transition: top 0.3s ease-in-out, left 0.3s ease-in-out;
+    }
+
+
+    .titulo-galeria {
+        font-size: 0.8rem;
+
+
+
+    }
+
+
+
+
+
+
+}
